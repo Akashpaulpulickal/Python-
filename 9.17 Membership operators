@@ -1,0 +1,9 @@
+list1 = [1, 2, 3, 4, 5]
+
+# in
+membership_in = (2 in list1)
+print("Membership in:", membership_in)
+
+# not in
+membership_not_in = (6 not in list1)
+print("Membership not in:", membership_not_in)
