@@ -1,0 +1,5 @@
+multi_line_string = """This is a multi-line string.
+it has multiple lines 
+You can write as much as you want
+and always i can say that wakanda for ever."""
+print(multi_line_string)
