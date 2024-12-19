@@ -1,0 +1,39 @@
+# Integer to float
+int_value = 42
+float_value = float(int_value)
+print("Integer to float:", float_value, "Type:", type(float_value))
+
+# Float to integer
+float_value = 3.14
+int_value = int(float_value)
+print("Float to integer:", int_value, "Type:", type(int_value))
+
+# String to integer
+str_value = "123"
+int_value = int(str_value)
+print("String to integer:", int_value, "Type:", type(int_value))
+
+# String to float
+str_value = "3.14"
+float_value = float(str_value)
+print("String to float:", float_value, "Type:", type(float_value))
+
+# Integer to string
+int_value = 42
+str_value = str(int_value)
+print("Integer to string:", str_value, "Type:", type(str_value))
+
+# Float to string
+float_value = 3.14
+str_value = str(float_value)
+print("Float to string:", str_value, "Type:", type(str_value))
+
+# List to tuple
+list_value = [1, 2, 3]
+tuple_value = tuple(list_value)
+print("List to tuple:", tuple_value, "Type:", type(tuple_value))
+
+# Tuple to list
+tuple_value = (1, 2, 3)
+list_value = list(tuple_value)
+print("Tuple to list:", list_value, "Type:", type(list_value))
