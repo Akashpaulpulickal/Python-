@@ -1,0 +1,13 @@
+# Integer
+integer_value = 42
+
+# Float
+float_value = 3.14
+
+# Complex
+complex_value = 1 + 2j
+
+# Printing the values and their types
+print("Integer:", integer_value, "Type:", type(integer_value))
+print("Float:", float_value, "Type:", type(float_value))
+print("Complex:", complex_value, "Type:", type(complex_value))
