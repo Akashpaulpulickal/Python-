@@ -1,0 +1,49 @@
+# Backslash
+backslash = "I am Akash: \\"
+
+# Single quote
+single_quote = 'I am Akash\'s code.'
+
+# Double quote
+double_quote = "He said, \"I am Akash!\""
+
+# Newline
+newline = "I am Akash.\nNice to meet you."
+
+# Tab
+tab = "I am Akash:\tNice to meet you."
+
+# Backspace
+backspace = "I am Akash\b."
+
+# Carriage return
+carriage_return = "I am Akash\rNice to meet you."
+
+# Form feed
+form_feed = "I am Akash\fNice to meet you."
+
+# Octal value
+octal_value = "\111\040\141\155\040\101\153\141\163\150"
+
+# Hex value
+hex_value = "\x49\x20\x61\x6d\x20\x41\x6b\x61\x73\x68"
+
+# Unicode
+unicode_value = "\u0049\u0020\u0061\u006d\u0020\u0041\u006b\u0061\u0073\u0068"
+
+# Raw string
+raw_string = r"I am Akash: \n \t \\"
+
+# Printing all values
+print(backslash)
+print(single_quote)
+print(double_quote)
+print(newline)
+print(tab)
+print(backspace)
+print(carriage_return)
+print(form_feed)
+print(octal_value)
+print(hex_value)
+print(unicode_value)
+print(raw_string)
