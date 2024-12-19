@@ -1,0 +1,27 @@
+# Addition
+add = 10 + 5
+print("Addition:", add)
+
+# Subtraction
+subtract = 10 - 5
+print("Subtraction:", subtract)
+
+# Multiplication
+multiply = 10 * 5
+print("Multiplication:", multiply)
+
+# Division
+divide = 10 / 5
+print("Division:", divide)
+
+# Floor Division
+floor_divide = 10 // 3
+print("Floor Division:", floor_divide)
+
+# Modulus
+modulus = 10 % 3
+print("Modulus:", modulus)
+
+# Exponentiation
+exponent = 10 ** 2
+print("Exponentiation:", exponent)
