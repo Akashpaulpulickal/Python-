@@ -1,0 +1,26 @@
+x = 10  # 1010 in binary
+y = 4   # 0100 in binary
+
+# Bitwise AND
+bitwise_and = x & y
+print("Bitwise AND:", bitwise_and)
+
+# Bitwise OR
+bitwise_or = x | y
+print("Bitwise OR:", bitwise_or)
+
+# Bitwise XOR
+bitwise_xor = x ^ y
+print("Bitwise XOR:", bitwise_xor)
+
+# Bitwise NOT
+bitwise_not = ~x
+print("Bitwise NOT:", bitwise_not)
+
+# Bitwise left shift
+left_shift = x << 2
+print("Bitwise left shift:", left_shift)
+
+# Bitwise right shift
+right_shift = x >> 2
+print("Bitwise right shift:", right_shift)
