@@ -1,0 +1,69 @@
+# String initialization
+string = "I am Akash"
+
+# Length of the string
+length = len(string)
+print("Length:", length)
+
+# Accessing characters
+first_char = string[0]
+last_char = string[-1]
+print("First character:", first_char)
+print("Last character:", last_char)
+
+# Slicing
+substring = string[0:5]
+print("Substring:", substring)
+
+# Concatenation
+concatenated_string = string + " How are you?"
+print("Concatenated string:", concatenated_string)
+
+# Repetition
+repeated_string = string * 3
+print("Repeated string:", repeated_string)
+
+# Uppercase
+uppercase_string = string.upper()
+print("Uppercase string:", uppercase_string)
+
+# Lowercase
+lowercase_string = string.lower()
+print("Lowercase string:", lowercase_string)
+
+# Title case
+title_string = string.title()
+print("Title case string:", title_string)
+
+# Strip whitespace
+whitespace_string = "   I am Akash   "
+stripped_string = whitespace_string.strip()
+print("Stripped string:", stripped_string)
+
+# Replace
+replaced_string = string.replace("Akash", "Python")
+print("Replaced string:", replaced_string)
+
+# Split
+split_string = string.split(" ")
+print("Split string:", split_string)
+
+# Join
+joined_string = " ".join(split_string)
+print("Joined string:", joined_string)
+
+# Find
+index = string.find("Akash")
+print("Index of 'Akash':", index)
+
+# Count
+count = string.count("a")
+print("Count of 'a':", count)
+
+# Check if string starts with a substring
+starts_with = string.startswith("I am")
+print("Starts with 'I am':", starts_with)
+
+# Check if string ends with a substring
+ends_with = string.endswith("Akash")
+print("Ends with 'Akash':", ends_with)
