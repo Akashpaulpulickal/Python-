@@ -1,0 +1,61 @@
+# Integer
+integer_value = 42
+
+# Float
+float_value = 3.14
+
+# String
+string_value = "AKASH PAUL"
+
+# Boolean
+boolean_value = True
+
+# List
+list_value = [1, 2, 3, 4, 5]
+
+# Tuple
+tuple_value = (1, 2, 3, 4, 5)
+
+# Set
+set_value = {1, 2, 3, 4, 5}
+
+# Dictionary
+dictionary_value = {"name": "AKASH", "age": 20}
+
+# NoneType
+none_value = None
+
+# Complex
+complex_value = 1 + 2j
+
+# Byte
+byte_value = b"byte"
+
+# Bytearray
+bytearray_value = bytearray([1, 2, 3])
+
+# Memoryview
+memoryview_value = memoryview(bytearray_value)
+
+# Frozenset
+frozenset_value = frozenset([1, 2, 3, 4, 5])
+
+# Range
+range_value = range(10)
+
+# Printing all values
+print("Integer:", integer_value)
+print("Float:", float_value)
+print("String:", string_value)
+print("Boolean:", boolean_value)
+print("List:", list_value)
+print("Tuple:", tuple_value)
+print("Set:", set_value)
+print("Dictionary:", dictionary_value)
+print("NoneType:", none_value)
+print("Complex:", complex_value)
+print("Byte:", byte_value)
+print("Bytearray:", bytearray_value)
+print("Memoryview:", memoryview_value)
+print("Frozenset:", frozenset_value)
+print("Range:", list(range_value))
