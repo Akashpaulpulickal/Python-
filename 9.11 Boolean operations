@@ -1,0 +1,55 @@
+# Boolean values
+a = True
+b = False
+
+# Logical AND
+and_result = a and b
+print("Logical AND:", and_result)
+
+# Logical OR
+or_result = a or b
+print("Logical OR:", or_result)
+
+# Logical NOT
+not_result = not a
+print("Logical NOT:", not_result)
+
+# Comparison operators
+x = 10
+y = 20
+
+# Equal to
+equal_result = (x == y)
+print("Equal to:", equal_result)
+
+# Not equal to
+not_equal_result = (x != y)
+print("Not equal to:", not_equal_result)
+
+# Greater than
+greater_than_result = (x > y)
+print("Greater than:", greater_than_result)
+
+# Less than
+less_than_result = (x < y)
+print("Less than:", less_than_result)
+
+# Greater than or equal to
+greater_than_or_equal_result = (x >= y)
+print("Greater than or equal to:", greater_than_or_equal_result)
+
+# Less than or equal to
+less_than_or_equal_result = (x <= y)
+print("Less than or equal to:", less_than_or_equal_result)
+
+# Boolean operations with lists
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+
+# Check if an element is in a list
+in_list_result = (2 in list1)
+print("Element in list:", in_list_result)
+
+# Check if an element is not in a list
+not_in_list_result = (4 not in list1)
+print("Element not in list:", not_in_list_result)
