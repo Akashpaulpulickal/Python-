@@ -1,0 +1,171 @@
+# Base string
+string = "I am Akash"
+
+# Capitalize: Capitalizes the first character of the string
+capitalized_string = string.capitalize()
+print("Capitalize:", capitalized_string)
+
+# Casefold: Converts the string to lowercase
+casefolded_string = string.casefold()
+print("Casefold:", casefolded_string)
+
+# Center: Centers the string within a specified width, padding with a specified character
+centered_string = string.center(20, '*')
+print("Center:", centered_string)
+
+# Count: Counts the occurrences of a substring in the string
+count_a = string.count('a')
+print("Count 'a':", count_a)
+
+# Encode: Encodes the string using the default encoding (UTF-8)
+encoded_string = string.encode()
+print("Encode:", encoded_string)
+
+# Endswith: Checks if the string ends with a specified substring
+ends_with = string.endswith("Akash")
+print("Ends with 'Akash':", ends_with)
+
+# Expandtabs: Expands tab characters in the string to spaces
+tab_string = "I\tam\tAkash"
+expanded_tabs = tab_string.expandtabs(4)
+print("Expandtabs:", expanded_tabs)
+
+# Find: Finds the first occurrence of a substring in the string
+find_am = string.find("am")
+print("Find 'am':", find_am)
+
+# Format: Formats the string using placeholders
+formatted_string = "My name is {}".format("Akash")
+print("Format:", formatted_string)
+
+# Index: Finds the first occurrence of a substring in the string (raises an error if not found)
+index_am = string.index("am")
+print("Index 'am':", index_am)
+
+# Isalnum: Checks if all characters in the string are alphanumeric
+isalnum = string.isalnum()
+print("Isalnum:", isalnum)
+
+# Isalpha: Checks if all characters in the string are alphabetic (ignoring spaces)
+isalpha = string.replace(" ", "").isalpha()
+print("Isalpha:", isalpha)
+
+# Isascii: Checks if all characters in the string are ASCII characters
+isascii = string.isascii()
+print("Isascii:", isascii)
+
+# Isdecimal: Checks if all characters in the string are decimal characters
+isdecimal = string.isdecimal()
+print("Isdecimal:", isdecimal)
+
+# Isdigit: Checks if all characters in the string are digits
+isdigit = string.isdigit()
+print("Isdigit:", isdigit)
+
+# Isidentifier: Checks if the string is a valid identifier
+isidentifier = string.isidentifier()
+print("Isidentifier:", isidentifier)
+
+# Islower: Checks if all characters in the string are lowercase
+islower = string.islower()
+print("Islower:", islower)
+
+# Isnumeric: Checks if all characters in the string are numeric
+isnumeric = string.isnumeric()
+print("Isnumeric:", isnumeric)
+
+# Isprintable: Checks if all characters in the string are printable
+isprintable = string.isprintable()
+print("Isprintable:", isprintable)
+
+# Isspace: Checks if all characters in the string are whitespace
+isspace = string.isspace()
+print("Isspace:", isspace)
+
+# Istitle: Checks if the string is title-cased
+istitle = string.istitle()
+print("Istitle:", istitle)
+
+# Isupper: Checks if all characters in the string are uppercase
+isupper = string.isupper()
+print("Isupper:", isupper)
+
+# Join: Joins elements of an iterable with the string as a separator
+joined_string = "-".join(["I", "am", "Akash"])
+print("Join:", joined_string)
+
+# Ljust: Left-justifies the string within a specified width, padding with a specified character
+ljust_string = string.ljust(20, '*')
+print("Ljust:", ljust_string)
+
+# Lower: Converts the string to lowercase
+lower_string = string.lower()
+print("Lower:", lower_string)
+
+# Lstrip: Removes leading whitespace from the string
+lstrip_string = "   I am Akash".lstrip()
+print("Lstrip:", lstrip_string)
+
+# Partition: Splits the string into three parts using a specified separator
+partition_string = string.partition("am")
+print("Partition:", partition_string)
+
+# Replace: Replaces occurrences of a substring with another substring
+replace_string = string.replace("Akash", "Python")
+print("Replace:", replace_string)
+
+# Rfind: Finds the last occurrence of a substring in the string
+rfind_am = string.rfind("am")
+print("Rfind 'am':", rfind_am)
+
+# Rindex: Finds the last occurrence of a substring in the string (raises an error if not found)
+rindex_am = string.rindex("am")
+print("Rindex 'am':", rindex_am)
+
+# Rjust: Right-justifies the string within a specified width, padding with a specified character
+rjust_string = string.rjust(20, '*')
+print("Rjust:", rjust_string)
+
+# Rpartition: Splits the string into three parts using the last occurrence of a specified separator
+rpartition_string = string.rpartition("am")
+print("Rpartition:", rpartition_string)
+
+# Rsplit: Splits the string into a list using a specified separator, starting from the right
+rsplit_string = string.rsplit(" ")
+print("Rsplit:", rsplit_string)
+
+# Rstrip: Removes trailing whitespace from the string
+rstrip_string = "I am Akash   ".rstrip()
+print("Rstrip:", rstrip_string)
+
+# Split: Splits the string into a list using a specified separator
+split_string = string.split(" ")
+print("Split:", split_string)
+
+# Splitlines: Splits the string into a list at line breaks
+splitlines_string = "I am Akash\nNice to meet you".splitlines()
+print("Splitlines:", splitlines_string)
+
+# Startswith: Checks if the string starts with a specified substring
+startswith_string = string.startswith("I am")
+print("Startswith:", startswith_string)
+
+# Strip: Removes leading and trailing whitespace from the string
+strip_string = "   I am Akash   ".strip()
+print("Strip:", strip_string)
+
+# Swapcase: Swaps the case of all characters in the string
+swapcase_string = string.swapcase()
+print("Swapcase:", swapcase_string)
+
+# Title: Converts the string to title case
+title_string = string.title()
+print("Title:", title_string)
+
+# Upper: Converts the string to uppercase
+upper_string = string.upper()
+print("Upper:", upper_string)
+
+# Zfill: Pads the string with zeros on the left to fill a specified width
+zfill_string = string.zfill(20)
+print("Zfill:", zfill_string)
