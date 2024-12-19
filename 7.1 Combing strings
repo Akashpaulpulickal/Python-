@@ -1,0 +1,4 @@
+a = "Wakanda"
+b = "For Ever"
+c = a + " " + b
+print(c)
