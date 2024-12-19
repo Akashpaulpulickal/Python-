@@ -1,0 +1,26 @@
+x = 10
+y = 5
+
+# Equal to
+equal = (x == y)
+print("Equal to:", equal)
+
+# Not equal to
+not_equal = (x != y)
+print("Not equal to:", not_equal)
+
+# Greater than
+greater = (x > y)
+print("Greater than:", greater)
+
+# Less than
+less = (x < y)
+print("Less than:", less)
+
+# Greater than or equal to
+greater_equal = (x >= y)
+print("Greater than or equal to:", greater_equal)
+
+# Less than or equal to
+less_equal = (x <= y)
+print("Less than or equal to:", less_equal)
