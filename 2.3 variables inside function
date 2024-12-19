@@ -1,0 +1,9 @@
+x = "wakanda"
+
+def myfunc():
+  x = "for ever"
+  print("that is " + x)
+
+myfunc()
+
+print("that is " + x)
