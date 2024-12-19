@@ -1,0 +1,29 @@
+x = 10
+
+# Addition assignment
+x += 5
+print("Addition assignment:", x)
+
+# Subtraction assignment
+x -= 3
+print("Subtraction assignment:", x)
+
+# Multiplication assignment
+x *= 2
+print("Multiplication assignment:", x)
+
+# Division assignment
+x /= 4
+print("Division assignment:", x)
+
+# Modulus assignment
+x %= 3
+print("Modulus assignment:", x)
+
+# Exponentiation assignment
+x **= 2
+print("Exponentiation assignment:", x)
+
+# Floor division assignment
+x //= 2
+print("Floor division assignment:", x)
