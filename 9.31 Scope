@@ -1,0 +1,28 @@
+# Global scope
+x = 10 # Global variable
+
+def outer_function():
+    # Enclosing scope
+    y = 20 # Enclosing variable
+
+    def inner_function():
+        # Local scope
+        z = 30 # Local variable
+        print("Inside inner_function:")
+        print(f"x (global): {x}") # Accessing global variable
+        print(f"y (enclosing): {y}") # Accessing enclosing variable
+        print(f"z (local): {z}") # Accessing local variable
+
+    inner_function()
+
+    print("Inside outer_function:")
+    print(f"x (global): {x}") # Accessing global variable
+    print(f"y (enclosing): {y}") # Accessing enclosing variable
+    # print(f"z (local): {z}") # This would raise an error because z is not accessible here
+
+outer_function()
+
+print("In the global scope:")
+print(f"x (global): {x}") # Accessing global variable
+# print(f"y (enclosing): {y}") # This would raise an error because y is not accessible here
+# print(f"z (local): {z}") # This would raise an error because z is not accessible here
