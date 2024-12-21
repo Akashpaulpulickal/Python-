@@ -1,0 +1,54 @@
+# Create a tuple
+my_tuple = (1, 2, 3, 4, 5) # Creating a tuple with initial values
+
+# 1. count() - Return the number of times a specified value appears in the tuple
+count_of_2 = my_tuple.count(2) # Counting the number of occurrences of 2
+print("Count of 2:", count_of_2)
+
+# 2. index() - Return the index of the first item with the specified value
+index_of_3 = my_tuple.index(3) # Finding the index of the first occurrence of 3
+print("Index of 3:", index_of_3)
+
+# Access tuple items
+first_item = my_tuple[0] # Accessing the first item in the tuple
+print("First item:", first_item)
+
+# Loop through a tuple
+print("Looping through the tuple:")
+for item in my_tuple:
+    print(item)
+
+# Tuple unpacking
+a, b, c, d, e = my_tuple # Unpacking the tuple into variables
+print("Unpacked values:", a, b, c, d, e)
+
+# Nested tuples
+nested_tuple = (1, 2, (3, 4), 5) # Creating a nested tuple
+print("Nested tuple:", nested_tuple)
+print("Accessing nested tuple item:", nested_tuple[2][0]) # Accessing an item in the nested tuple
+
+# Tuple concatenation
+another_tuple = (6, 7, 8)
+concatenated_tuple = my_tuple + another_tuple # Concatenating two tuples
+print("Concatenated tuple:", concatenated_tuple)
+
+# Tuple slicing
+sliced_tuple = my_tuple[1:4] # Slicing the tuple from index 1 to 3
+print("Sliced tuple:", sliced_tuple)
+
+# Tuple length
+tuple_length = len(my_tuple) # Getting the length of the tuple
+print("Length of tuple:", tuple_length)
+
+# Check if an item exists in a tuple
+item_exists = 3 in my_tuple # Checking if 3 exists in the tuple
+print("Does 3 exist in the tuple?", item_exists)
+
+# Convert a list to a tuple
+my_list = [1, 2, 3, 4, 5]
+converted_tuple = tuple(my_list) # Converting the list to a tuple
+print("Converted tuple:", converted_tuple)
+
+# Convert a tuple to a list
+converted_list = list(my_tuple) # Converting the tuple to a list
+print("Converted list:", converted_list)
