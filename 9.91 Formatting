@@ -1,0 +1,55 @@
+# Using the % operator for string formatting
+name = "Alice"
+age = 30
+formatted_string = "Hello, %s! You are %d years old." % (name, age)
+print(formatted_string)
+
+# Using the str.format() method for string formatting
+formatted_string = "Hello, {}! You are {} years old.".format(name, age)
+print(formatted_string)
+
+# Using f-strings (formatted string literals) for string formatting (Python 3.6+)
+formatted_string = f"Hello, {name}! You are {age} years old."
+print(formatted_string)
+
+# Formatting numbers with str.format()
+pi = 3.141592653589793
+formatted_pi = "Pi to three decimal places: {:.3f}".format(pi)
+print(formatted_pi)
+
+# Formatting numbers with f-strings
+formatted_pi = f"Pi to three decimal places: {pi:.3f}"
+print(formatted_pi)
+
+# Padding and aligning strings with str.format()
+left_aligned = "{:<10}".format("left")
+center_aligned = "{:^10}".format("center")
+right_aligned = "{:>10}".format("right")
+print(f"Left aligned: '{left_aligned}'")
+print(f"Center aligned: '{center_aligned}'")
+print(f"Right aligned: '{right_aligned}'")
+
+# Padding and aligning strings with f-strings
+left_aligned = f"{'left':<10}"
+center_aligned = f"{'center':^10}"
+right_aligned = f"{'right':>10}"
+print(f"Left aligned: '{left_aligned}'")
+print(f"Center aligned: '{center_aligned}'")
+print(f"Right aligned: '{right_aligned}'")
+
+# Formatting numbers with commas as thousands separators
+number = 1234567890
+formatted_number = "{:,}".format(number)
+print(f"Number with commas: {formatted_number}")
+
+# Formatting numbers with commas using f-strings
+formatted_number = f"{number:,}"
+print(f"Number with commas: {formatted_number}")
+
+# Combining multiple formatting options
+formatted_string = "Name: {:<10} Age: {:>3} Pi: {:.2f}".format(name, age, pi)
+print(formatted_string)
+
+# Combining multiple formatting options with f-strings
+formatted_string = f"Name: {name:<10} Age: {age:>3} Pi: {pi:.2f}"
+print(formatted_string)
