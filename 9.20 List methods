@@ -1,0 +1,85 @@
+# Create a list
+my_list = [1, 2, 3, 4, 5] # Creating a list with initial values
+
+# 1. append() - Add an item to the end of the list
+my_list.append(6) # Adding 6 to the end of the list
+print("After append:", my_list)
+
+# 2. extend() - Add all items of a list to the end of the current list
+my_list.extend([7, 8]) # Adding [7, 8] to the end of the list
+print("After extend:", my_list)
+
+# 3. insert() - Insert an item at a specified position
+my_list.insert(2, 2.5) # Inserting 2.5 at index 2
+print("After insert:", my_list)
+
+# 4. remove() - Remove the first item with the specified value
+my_list.remove(2.5) # Removing the first occurrence of 2.5
+print("After remove:", my_list)
+
+# 5. pop() - Remove the item at the specified position (or the last item if no index is specified)
+popped_item = my_list.pop() # Removing the last item
+print("After pop:", my_list, "| Popped item:", popped_item)
+
+# 6. clear() - Remove all items from the list
+my_list.clear() # Clearing the list
+print("After clear:", my_list)
+
+# Recreate the list for further methods
+my_list = [1, 2, 3, 4, 5]
+
+# 7. index() - Return the index of the first item with the specified value
+index_of_3 = my_list.index(3) # Finding the index of the first occurrence of 3
+print("Index of 3:", index_of_3)
+
+# 8. count() - Return the number of items with the specified value
+count_of_2 = my_list.count(2) # Counting the number of occurrences of 2
+print("Count of 2:", count_of_2)
+
+# 9. sort() - Sort the list in ascending order (or descending if specified)
+my_list.sort() # Sorting the list in ascending order
+print("After sort (ascending):", my_list)
+my_list.sort(reverse=True) # Sorting the list in descending order
+print("After sort (descending):", my_list)
+
+# 10. reverse() - Reverse the order of the list
+my_list.reverse() # Reversing the list
+print("After reverse:", my_list)
+
+# 11. copy() - Return a shallow copy of the list
+copied_list = my_list.copy() # Copying the list
+print("Copied list:", copied_list)
+
+# 12. Access list items
+first_item = my_list[0] # Accessing the first item in the list
+print("First item:", first_item)
+
+# 13. Change list items
+my_list[1] = 20 # Changing the second item in the list
+print("After changing second item:", my_list)
+
+# 14. Add list items
+my_list.append(6) # Adding an item to the end of the list
+print("After adding an item:", my_list)
+
+# 15. Replace list items
+my_list[2] = 30 # Replacing the third item in the list
+print("After replacing third item:", my_list)
+
+# 16. Remove list items
+my_list.remove(4) # Removing the item with value 4
+print("After removing an item:", my_list)
+
+# 17. Loop through a list
+print("Looping through the list:")
+for item in my_list:
+    print(item)
+
+# 18. List comprehension
+squared_list = [x**2 for x in my_list] # Creating a new list with squared values
+print("List comprehension (squared values):", squared_list)
+
+# 19. Join lists
+another_list = [7, 8, 9]
+joined_list = my_list + another_list # Joining two lists
+print("Joined list:", joined_list)
