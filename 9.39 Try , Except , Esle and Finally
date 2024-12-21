@@ -1,0 +1,21 @@
+def divide_numbers(a, b):
+    try:
+        # Try to perform the division
+        result = a / b
+    except ZeroDivisionError:
+        # Handle the case where division by zero is attempted
+        print("Error: Division by zero is not allowed.")
+    except TypeError:
+        # Handle the case where the inputs are not numbers
+        print("Error: Both inputs must be numbers.")
+    else:
+        # Execute this block if no exceptions were raised
+        print(f"The result of {a} divided by {b} is {result}")
+    finally:
+        # This block will always be executed, regardless of whether an exception was raised or not
+        print("Execution of the try-except block is complete.")
+
+# Test cases
+divide_numbers(10, 2)  # Should print the result and the finally message
+divide_numbers(10, 0)  # Should print the division by zero error and the finally message
+divide_numbers(10, "a")  # Should print the type error and the finally message
