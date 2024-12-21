@@ -1,0 +1,59 @@
+# Define a base class named Animal
+class Animal:
+    # Constructor method to initialize the object
+    def __init__(self, name):
+        self.name = name # Instance variable for the name
+
+    # Method to display the animal's name
+    def display_name(self):
+        print(f"Animal's name: {self.name}")
+
+    # Method to make a sound (to be overridden by subclasses)
+    def make_sound(self):
+        print("This animal makes a sound.")
+
+# Define a subclass named Dog that inherits from Animal
+class Dog(Animal):
+    # Constructor method to initialize the object
+    def __init__(self, name, breed):
+        super().__init__(name) # Call the constructor of the parent class
+        self.breed = breed # Instance variable for the breed
+
+    # Method to display the dog's breed
+    def display_breed(self):
+        print(f"Dog's breed: {self.breed}")
+
+    # Override the make_sound method
+    def make_sound(self):
+        print("Woof! Woof!")
+
+# Define a subclass named Cat that inherits from Animal
+class Cat(Animal):
+    # Constructor method to initialize the object
+    def __init__(self, name, color):
+        super().__init__(name) # Call the constructor of the parent class
+        self.color = color # Instance variable for the color
+
+    # Method to display the cat's color
+    def display_color(self):
+        print(f"Cat's color: {self.color}")
+
+    # Override the make_sound method
+    def make_sound(self):
+        print("Meow! Meow!")
+
+# Create an object of the Dog class
+dog1 = Dog("Buddy", "Golden Retriever")
+
+# Access the object's attributes and methods
+dog1.display_name()
+dog1.display_breed()
+dog1.make_sound()
+
+# Create an object of the Cat class
+cat1 = Cat("Whiskers", "Black")
+
+# Access the object's attributes and methods
+cat1.display_name()
+cat1.display_color()
+cat1.make_sound()
