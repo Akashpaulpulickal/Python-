@@ -1,0 +1,52 @@
+# Define a class named Person
+class Person:
+    # Constructor method to initialize the object
+    def __init__(self, name, age):
+        self.name = name # Instance variable for the name
+        self.age = age # Instance variable for the age
+
+    # Method to display the person's information
+    def display_info(self):
+        print(f"Name: {self.name}, Age: {self.age}")
+
+    # Method to update the person's age
+    def update_age(self, new_age):
+        self.age = new_age
+        print(f"{self.name}'s age has been updated to {self.age}")
+
+# Create an object of the Person class
+person1 = Person("Alice", 30)
+
+# Access the object's attributes
+print(f"Person's name: {person1.name}")
+print(f"Person's age: {person1.age}")
+
+# Call the object's methods
+person1.display_info()
+person1.update_age(31)
+person1.display_info()
+
+# Define a class named Student that inherits from Person
+class Student(Person):
+    # Constructor method to initialize the object
+    def __init__(self, name, age, student_id):
+        super().__init__(name, age) # Call the constructor of the parent class
+        self.student_id = student_id # Instance variable for the student ID
+
+    # Method to display the student's information
+    def display_info(self):
+        super().display_info() # Call the display_info method of the parent class
+        print(f"Student ID: {self.student_id}")
+
+# Create an object of the Student class
+student1 = Student("Bob", 20, "S12345")
+
+# Access the object's attributes
+print(f"Student's name: {student1.name}")
+print(f"Student's age: {student1.age}")
+print(f"Student's ID: {student1.student_id}")
+
+# Call the object's methods
+student1.display_info()
+student1.update_age(21)
+student1.display_info()
