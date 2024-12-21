@@ -1,0 +1,48 @@
+import datetime
+
+# Get the current date and time
+now = datetime.datetime.now()
+print("Current date and time:", now)
+
+# Get the current date
+today = datetime.date.today()
+print("Today's date:", today)
+
+# Create a specific date
+specific_date = datetime.date(2023, 12, 25) # Year, Month, Day
+print("Specific date:", specific_date)
+
+# Create a specific time
+specific_time = datetime.time(14, 30, 45) # Hour, Minute, Second
+print("Specific time:", specific_time)
+
+# Create a specific datetime
+specific_datetime = datetime.datetime(2023, 12, 25, 14, 30, 45) # Year, Month, Day, Hour, Minute, Second
+print("Specific datetime:", specific_datetime)
+
+# Format a date
+formatted_date = specific_date.strftime("%A, %B %d, %Y") # Format: Weekday, Month Day, Year
+print("Formatted date:", formatted_date)
+
+# Parse a date from a string
+date_string = "2023-12-25"
+parsed_date = datetime.datetime.strptime(date_string, "%Y-%m-%d").date()
+print("Parsed date:", parsed_date)
+
+# Calculate the difference between two dates
+date1 = datetime.date(2023, 12, 25)
+date2 = datetime.date(2024, 1, 1)
+date_difference = date2 - date1
+print("Difference between dates:", date_difference.days, "days")
+
+# Add days to a date
+new_date = specific_date + datetime.timedelta(days=10)
+print("Date after adding 10 days:", new_date)
+
+# Subtract days from a date
+new_date = specific_date - datetime.timedelta(days=10)
+print("Date after subtracting 10 days:", new_date)
+
+# Get the day of the week
+day_of_week = specific_date.strftime("%A")
+print("Day of the week:", day_of_week)
