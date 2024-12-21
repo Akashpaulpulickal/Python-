@@ -1,0 +1,71 @@
+# Define a simple function that takes no arguments and returns no value
+def greet():
+    print("Hello, welcome to learning Python functions!")
+
+# Call the greet function
+greet()
+
+# Define a function that takes one argument and returns no value
+def greet_person(name):
+    print(f"Hello, {name}! Welcome to learning Python functions!")
+
+# Call the greet_person function with an argument
+greet_person("Alice")
+
+# Define a function that takes two arguments and returns their sum
+def add_numbers(a, b):
+    return a + b
+
+# Call the add_numbers function and store the result
+result = add_numbers(5, 3)
+print(f"The sum of 5 and 3 is: {result}")
+
+# Define a function with default arguments
+def greet_with_default(name="Guest"):
+    print(f"Hello, {name}! Welcome to learning Python functions!")
+
+# Call the greet_with_default function without an argument
+greet_with_default()
+
+# Call the greet_with_default function with an argument
+greet_with_default("Bob")
+
+# Define a function that takes a variable number of arguments
+def print_numbers(*args):
+    print("The numbers are:")
+    for number in args:
+        print(number)
+
+# Call the print_numbers function with multiple arguments
+print_numbers(1, 2, 3, 4, 5)
+
+# Define a function that takes keyword arguments
+def print_info(**kwargs):
+    print("The information is:")
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+# Call the print_info function with keyword arguments
+print_info(name="Charlie", age=30, city="New York")
+
+# Define a function that returns multiple values
+def get_person_info():
+    name = "David"
+    age = 25
+    city = "Los Angeles"
+    return name, age, city
+
+# Call the get_person_info function and unpack the returned values
+person_name, person_age, person_city = get_person_info()
+print(f"Name: {person_name}, Age: {person_age}, City: {person_city}")
+
+# Define a recursive function to calculate the factorial of a number
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Call the factorial function and print the result
+factorial_result = factorial(5)
+print(f"The factorial of 5 is: {factorial_result}")
