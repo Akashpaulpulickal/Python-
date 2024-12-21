@@ -1,0 +1,62 @@
+# Create a dictionary
+my_dict = {'a': 1, 'b': 2, 'c': 3} # Creating a dictionary with initial key-value pairs
+
+# 1. get() - Return the value for a specified key
+value_a = my_dict.get('a') # Getting the value for key 'a'
+print("Value for key 'a':", value_a)
+
+# 2. keys() - Return a view object of all keys in the dictionary
+keys = my_dict.keys() # Getting all keys in the dictionary
+print("Keys:", keys)
+
+# 3. values() - Return a view object of all values in the dictionary
+values = my_dict.values() # Getting all values in the dictionary
+print("Values:", values)
+
+# 4. items() - Return a view object of all key-value pairs in the dictionary
+items = my_dict.items() # Getting all key-value pairs in the dictionary
+print("Items:", items)
+
+# 5. update() - Update the dictionary with key-value pairs from another dictionary
+my_dict.update({'d': 4, 'e': 5}) # Adding key-value pairs from another dictionary
+print("After update:", my_dict)
+
+# 6. pop() - Remove the item with the specified key and return its value
+popped_value = my_dict.pop('b') # Removing the item with key 'b'
+print("After pop:", my_dict, "| Popped value:", popped_value)
+
+# 7. popitem() - Remove and return the last key-value pair from the dictionary
+popped_item = my_dict.popitem() # Removing the last key-value pair
+print("After popitem:", my_dict, "| Popped item:", popped_item)
+
+# 8. clear() - Remove all items from the dictionary
+my_dict.clear() # Clearing the dictionary
+print("After clear:", my_dict)
+
+# Recreate the dictionary for further methods
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+# 9. copy() - Return a shallow copy of the dictionary
+copied_dict = my_dict.copy() # Copying the dictionary
+print("Copied dictionary:", copied_dict)
+
+# 10. fromkeys() - Create a new dictionary with keys from an iterable and values set to a specified value
+new_dict = dict.fromkeys(['x', 'y', 'z'], 0) # Creating a new dictionary with keys ['x', 'y', 'z'] and values set to 0
+print("New dictionary from keys:", new_dict)
+
+# 11. setdefault() - Return the value of a specified key. If the key does not exist, insert the key with a specified value
+default_value = my_dict.setdefault('d', 4) # Getting the value for key 'd', or setting it to 4 if it does not exist
+print("After setdefault:", my_dict, "| Default value:", default_value)
+
+# 12. len() - Return the number of items in the dictionary
+dict_length = len(my_dict) # Getting the length of the dictionary
+print("Length of dictionary:", dict_length)
+
+# 13. in - Check if a key exists in the dictionary
+key_exists = 'a' in my_dict # Checking if key 'a' exists in the dictionary
+print("Does key 'a' exist in the dictionary?", key_exists)
+
+# 14. Loop through a dictionary
+print("Looping through the dictionary:")
+for key, value in my_dict.items():
+    print(f"Key: {key}, Value: {value}")
