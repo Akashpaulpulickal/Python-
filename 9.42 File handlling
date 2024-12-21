@@ -1,0 +1,50 @@
+# Open a file for writing (creates the file if it doesn't exist)
+with open("example.txt", "w") as file:
+    # Write some text to the file
+    file.write("Hello, world!\n")
+    file.write("This is a sample file.\n")
+
+# Open a file for reading
+with open("example.txt", "r") as file:
+    # Read the entire content of the file
+    content = file.read()
+    print("File content:")
+    print(content)
+
+# Open a file for appending (adds content to the end of the file)
+with open("example.txt", "a") as file:
+    # Append some text to the file
+    file.write("Appending a new line.\n")
+
+# Open a file for reading line by line
+with open("example.txt", "r") as file:
+    print("Reading file line by line:")
+    for line in file:
+        print(line.strip())
+
+# Open a file for reading and writing
+with open("example.txt", "r+") as file:
+    # Read the first line
+    first_line = file.readline()
+    print("First line:", first_line.strip())
+
+    # Write a new line at the beginning of the file
+    file.seek(0)  # Move the cursor to the beginning of the file
+    file.write("New first line.\n")
+
+# Open a binary file for writing
+with open("example.bin", "wb") as file:
+    # Write some binary data to the file
+    file.write(b'\x00\x01\x02\x03\x04')
+
+# Open a binary file for reading
+with open("example.bin", "rb") as file:
+    # Read the binary data from the file
+    binary_content = file.read()
+    print("Binary file content:", binary_content)
+
+# Delete a file
+import os
+os.remove("example.txt")
+os.remove("example.bin")
+print("Files deleted.")
