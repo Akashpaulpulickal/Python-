@@ -1,0 +1,59 @@
+import re
+
+# Sample text
+text = "The quick brown fox jumps over the lazy dog. The fox is quick and smart."
+
+# 1. Search for a pattern in the text
+pattern = r"quick"
+match = re.search(pattern, text)
+if match:
+    print(f"Found '{pattern}' at position {match.start()} to {match.end()}")
+
+# 2. Find all occurrences of a pattern in the text
+pattern = r"fox"
+matches = re.findall(pattern, text)
+print(f"All occurrences of '{pattern}': {matches}")
+
+# 3. Replace a pattern in the text
+pattern = r"fox"
+replacement = "cat"
+new_text = re.sub(pattern, replacement, text)
+print(f"Text after replacement: {new_text}")
+
+# 4. Split the text by a pattern
+pattern = r"\s" # Split by whitespace
+split_text = re.split(pattern, text)
+print(f"Text split by whitespace: {split_text}")
+
+# 5. Match a pattern at the beginning of the text
+pattern = r"The"
+match = re.match(pattern, text)
+if match:
+    print(f"Pattern '{pattern}' found at the beginning of the text")
+
+# 6. Compile a regex pattern for repeated use
+pattern = re.compile(r"quick")
+matches = pattern.findall(text)
+print(f"All occurrences of compiled pattern 'quick': {matches}")
+
+# 7. Use regex with groups
+pattern = r"(quick) (brown) (fox)"
+match = re.search(pattern, text)
+if match:
+    print(f"Groups found: {match.groups()}")
+
+# 8. Use regex with named groups
+pattern = r"(?P<adjective>quick) (?P<color>brown) (?P<animal>fox)"
+match = re.search(pattern, text)
+if match:
+    print(f"Named groups found: {match.group('adjective')}, {match.group('color')}, {match.group('animal')}")
+
+# 9. Use regex with special sequences
+pattern = r"\bfox\b" # Match the word 'fox' as a whole word
+matches = re.findall(pattern, text)
+print(f"Whole word 'fox' occurrences: {matches}")
+
+# 10. Use regex with character classes
+pattern = r"[aeiou]" # Match any vowel
+matches = re.findall(pattern, text)
+print(f"Vowel occurrences: {matches}")
