@@ -1,0 +1,28 @@
+# Function to get user input and perform basic operations
+def get_user_input():
+    # Prompt the user to enter their name
+    name = input("Enter your name: ")
+    print(f"Hello, {name}!")
+
+    # Prompt the user to enter their age
+    age = input("Enter your age: ")
+
+    # Convert the age to an integer
+    try:
+        age = int(age)
+        print(f"You are {age} years old.")
+    except ValueError:
+        print("Invalid age. Please enter a valid number.")
+
+    # Prompt the user to enter their favorite number
+    favorite_number = input("Enter your favorite number: ")
+
+    # Convert the favorite number to a float
+    try:
+        favorite_number = float(favorite_number)
+        print(f"Your favorite number is {favorite_number}.")
+    except ValueError:
+        print("Invalid number. Please enter a valid number.")
+
+# Call the function to get user input
+get_user_input()
