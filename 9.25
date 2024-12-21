@@ -1,0 +1,33 @@
+# Define a function to demonstrate the use of a for loop
+def main():
+    # List of numbers to iterate through
+    numbers = [1, 2, 3, 4, 5]
+
+    # Use a for loop to iterate through each number in the list
+    for number in numbers:
+        print(f"Current number: {number}") # Print the current number
+
+    print("For loop has ended.") # Print a message after the loop ends
+
+    # Use a for loop to iterate through a range of numbers
+    for i in range(5): # range(5) generates numbers from 0 to 4
+        print(f"Range value: {i}") # Print the current value from the range
+
+    print("For loop with range has ended.") # Print a message after the loop ends
+
+    # Use a for loop to iterate through a string
+    my_string = "Hello"
+    for char in my_string:
+        print(f"Current character: {char}") # Print the current character
+
+    print("For loop with string has ended.") # Print a message after the loop ends
+
+    # Use a for loop to iterate through a dictionary
+    my_dict = {'a': 1, 'b': 2, 'c': 3}
+    for key, value in my_dict.items():
+        print(f"Key: {key}, Value: {value}") # Print the current key-value pair
+
+    print("For loop with dictionary has ended.") # Print a message after the loop ends
+
+# Call the main function
+main()
