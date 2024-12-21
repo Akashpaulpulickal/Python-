@@ -1,0 +1,69 @@
+import math
+
+# Basic arithmetic operations
+a = 10
+b = 3
+
+addition = a + b
+print(f"Addition: {a} + {b} = {addition}")
+
+subtraction = a - b
+print(f"Subtraction: {a} - {b} = {subtraction}")
+
+multiplication = a * b
+print(f"Multiplication: {a} * {b} = {multiplication}")
+
+division = a / b
+print(f"Division: {a} / {b} = {division}")
+
+floor_division = a // b
+print(f"Floor Division: {a} // {b} = {floor_division}")
+
+modulus = a % b
+print(f"Modulus: {a} % {b} = {modulus}")
+
+exponentiation = a ** b
+print(f"Exponentiation: {a} ** {b} = {exponentiation}")
+
+# Using the math module for advanced operations
+square_root = math.sqrt(a)
+print(f"Square Root: sqrt({a}) = {square_root}")
+
+power = math.pow(a, b)
+print(f"Power: pow({a}, {b}) = {power}")
+
+logarithm = math.log(a)
+print(f"Natural Logarithm: log({a}) = {logarithm}")
+
+logarithm_base_10 = math.log10(a)
+print(f"Logarithm Base 10: log10({a}) = {logarithm_base_10}")
+
+sine = math.sin(math.radians(30))
+print(f"Sine of 30 degrees: sin(30) = {sine}")
+
+cosine = math.cos(math.radians(60))
+print(f"Cosine of 60 degrees: cos(60) = {cosine}")
+
+tangent = math.tan(math.radians(45))
+print(f"Tangent of 45 degrees: tan(45) = {tangent}")
+
+# Constants
+pi = math.pi
+print(f"Pi: {pi}")
+
+e = math.e
+print(f"Euler's Number: {e}")
+
+# Rounding functions
+ceil_value = math.ceil(4.3)
+print(f"Ceiling: ceil(4.3) = {ceil_value}")
+
+floor_value = math.floor(4.7)
+print(f"Floor: floor(4.7) = {floor_value}")
+
+# Trigonometric functions
+degrees = math.degrees(math.pi)
+print(f"Degrees: degrees(pi) = {degrees}")
+
+radians = math.radians(180)
+print(f"Radians: radians(180) = {radians}")
