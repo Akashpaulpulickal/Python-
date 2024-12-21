@@ -1,0 +1,103 @@
+# Creating a Module:
+
+# mymodule.py: This file contains the module code.
+
+# greeting = "Hello, welcome to my module!": Defines a variable named greeting.
+
+# def add(a, b):: Defines a function named add that takes two arguments and returns their sum.
+
+# def subtract(a, b):: Defines a function named subtract that takes two arguments and returns their difference.
+
+# def multiply(a, b):: Defines a function named multiply that takes two arguments and returns their product.
+
+# def divide(a, b):: Defines a function named divide that takes two arguments and returns their quotient. It also handles division by zero.
+
+
+# Using the Module:
+
+# main.py: This file contains the script that uses the module.
+
+# import mymodule: Imports the mymodule module.
+
+# print(mymodule.greeting): Accesses and prints the greeting variable from the module.
+
+# result_add = mymodule.add(5, 3): Calls the add function from the module and stores the result.
+
+# print(f"The sum of 5 and 3 is: {result_add}"): Prints the result of the addition.
+
+# result_subtract = mymodule.subtract(5, 3): Calls the subtract function from the module and stores the result.
+
+# print(f"The difference between 5 and 3 is: {result_subtract}"): Prints the result of the subtraction.
+
+# result_multiply = mymodule.multiply(5, 3): Calls the multiply function from the module and stores the result.
+
+# print(f"The product of 5 and 3 is: {result_multiply}"): Prints the result of the multiplication.
+
+# result_divide = mymodule.divide(5, 3): Calls the divide function from the module and stores the result.
+
+# print(f"The quotient of 5 and 3 is: {result_divide}"): Prints the result of the division.
+
+# result_divide_by_zero = mymodule.divide(5, 0): Calls the divide function with a divisor of zero and stores the result.
+
+# print(f"Dividing 5 by 0: {result_divide_by_zero}"): Prints the result of the division by zero.
+
+
+############  First, let's create a module named mymodule.py with some functions and variables.
+
+# Define a variable
+greeting = "Hello, welcome to my module!"
+
+# Define a function to add two numbers
+def add(a, b):
+    return a + b
+
+# Define a function to subtract two numbers
+def subtract(a, b):
+    return a - b
+
+# Define a function to multiply two numbers
+def multiply(a, b):
+    return a * b
+
+# Define a function to divide two numbers
+def divide(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Cannot divide by zero"
+
+
+
+
+##############################     Now, let's create a script that imports and uses the mymodule module.
+
+
+# Import the mymodule module
+import mymodule
+
+# Access the variable from the module
+print(mymodule.greeting)
+
+# Use the functions from the module
+result_add = mymodule.add(5, 3)
+print(f"The sum of 5 and 3 is: {result_add}")
+
+result_subtract = mymodule.subtract(5, 3)
+print(f"The difference between 5 and 3 is: {result_subtract}")
+
+result_multiply = mymodule.multiply(5, 3)
+print(f"The product of 5 and 3 is: {result_multiply}")
+
+result_divide = mymodule.divide(5, 3)
+print(f"The quotient of 5 and 3 is: {result_divide}")
+
+result_divide_by_zero = mymodule.divide(5, 0)
+print(f"Dividing 5 by 0: {result_divide_by_zero}")
+
+
+
+
+
+
+
+
