@@ -1,0 +1,31 @@
+# Define a function to check the age category
+def check_age_category(age):
+    # Check if the age is less than 0
+    if age < 0:
+        print("Invalid age. Age cannot be negative.")
+    # Check if the age is less than 13
+    elif age < 13:
+        print("You are a child.")
+    # Check if the age is between 13 and 19 (inclusive)
+    elif age <= 19:
+        print("You are a teenager.")
+    # Check if the age is between 20 and 64 (inclusive)
+    elif age <= 64:
+        print("You are an adult.")
+    # If the age is 65 or older
+    else:
+        print("You are a senior.")
+
+# Define a function to demonstrate the use of if-else loop
+def main():
+    # List of ages to check
+    ages = [3, 15, 25, 70, -5]
+
+    # Loop through each age in the list
+    for age in ages:
+        print(f"Checking age: {age}")
+        check_age_category(age)
+        print()  # Print a blank line for better readability
+
+# Call the main function
+main()
