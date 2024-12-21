@@ -1,0 +1,34 @@
+# Define a function to demonstrate the use of a while loop
+def main():
+    # Initialize a counter variable
+    counter = 0
+
+    # Use a while loop to repeat a block of code as long as a condition is true
+    while counter < 5:
+        print(f"Counter value: {counter}") # Print the current value of the counter
+        counter += 1 # Increment the counter by 1
+
+    print("While loop has ended.") # Print a message after the loop ends
+
+    # Use a while loop to get user input until a valid input is provided
+    while True:
+        user_input = input("Enter a positive number (or 'q' to quit): ")
+        
+        if user_input.lower() == 'q': # Check if the user wants to quit
+            print("Quitting the loop.")
+            break # Exit the loop
+        
+        try:
+            number = int(user_input) # Try to convert the input to an integer
+            if number > 0:
+                print(f"You entered a positive number: {number}")
+                break # Exit the loop if a positive number is entered
+            else:
+                print("Please enter a positive number.")
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
+
+    print("Program has ended.") # Print a message after the program ends
+
+# Call the main function
+main()
