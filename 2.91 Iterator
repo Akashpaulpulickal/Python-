@@ -1,0 +1,62 @@
+# Define a custom iterator class
+class MyIterator:
+    def __init__(self, data):
+        self.data = data # Store the data
+        self.index = 0 # Initialize the index
+
+    def __iter__(self):
+        return self # Return the iterator object itself
+
+    def __next__(self):
+        if self.index < len(self.data):
+            result = self.data[self.index] # Get the current item
+            self.index += 1 # Move to the next index
+            return result # Return the current item
+        else:
+            raise StopIteration # Raise StopIteration when the end is reached
+
+# Create an instance of the custom iterator
+my_iter = MyIterator([1, 2, 3, 4, 5])
+
+# Use the iterator in a for loop
+print("Using the custom iterator in a for loop:")
+for item in my_iter:
+    print(item)
+
+# Create another instance of the custom iterator
+my_iter2 = MyIterator(["a", "b", "c"])
+
+# Use the iterator with the next() function
+print("\nUsing the custom iterator with the next() function:")
+try:
+    while True:
+        item = next(my_iter2)
+        print(item)
+except StopIteration:
+    print("Iteration has stopped.")
+
+# Define a generator function
+def my_generator():
+    yield 1
+    yield 2
+    yield 3
+
+# Create a generator object
+gen = my_generator()
+
+# Use the generator in a for loop
+print("\nUsing the generator in a for loop:")
+for item in gen:
+    print(item)
+
+# Create another generator object
+gen2 = my_generator()
+
+# Use the generator with the next() function
+print("\nUsing the generator with the next() function:")
+try:
+    while True:
+        item = next(gen2)
+        print(item)
+except StopIteration:
+    print("Iteration has stopped.")
