@@ -1,0 +1,19 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Try programiz.pro")
+#wirte a programme that ask the user to guess a sectret number (25) after each guesss the programme should give feedback too high  if guess guess is greater than sectrt number and too low if the guess is less than secret number . the programme should keep aasking untill the correct number is guessed
+
+
+b= 25
+a=None
+   
+while a!=b:
+    a=int(input("ENTER THE SECRET NUMBER  :  "))
+    if a <b:
+        print("too low")
+       
+    elif a>b:
+        print("too high")
+      
+    else:
+        print("correct")
