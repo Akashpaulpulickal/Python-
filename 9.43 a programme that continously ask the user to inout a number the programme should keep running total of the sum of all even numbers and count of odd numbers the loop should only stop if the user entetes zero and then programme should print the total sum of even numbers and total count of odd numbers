@@ -1,0 +1,19 @@
+
+print("Wakanda for ever")
+print("\n")
+#write a programme that continously ask the user to inout a number the programme should keep running total of the sum of all even numbers and count of odd numbers the loop should only stop if the user entetes zero and then programme should print the total sum of even numbers and total count of odd numbers 
+d=0
+c=0
+a = None
+while a!=0:
+    a= int(input("enter the number to check : "))
+    b=a%2
+    if b==0:
+        c=c+a
+        
+    if b!=0:
+        d=d+1
+    
+print("THE SUM OF EVEN NUMBERS IS ",c)   
+print("THE NUMBER OF ODD NUMBERS IS ",d)   
+    
