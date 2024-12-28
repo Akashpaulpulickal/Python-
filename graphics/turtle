@@ -1,0 +1,21 @@
+# use https://pythonsandbox.com/turtle for online combiler with turtle support
+
+import turtle
+
+# Set up the turtle
+t = turtle.Turtle()
+
+# Define the length and breadth of the rectangle
+length = 4
+breadth = 30
+
+# Draw the rectangle
+for _ in range(2):
+    t.forward(length)
+    t.right(90)
+    t.forward(breadth)
+    t.right(90)
+
+# Hide the turtle and display the window
+t.hideturtle()
+turtle.done()
