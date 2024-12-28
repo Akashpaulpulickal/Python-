@@ -4,6 +4,7 @@ i=0
 while i in range(0,a):
     print(i)
     b=b+i
+    print(b)
     i=i+b
   
     
