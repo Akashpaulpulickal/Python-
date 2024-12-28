@@ -1,0 +1,15 @@
+a=int(input("enter the number"))
+d=0
+e=0
+f=0
+b=str(a)
+c=len(b)
+for i in range(0, c):
+    d=int((b[i]))
+    f=d**3
+    e =e+f
+print("the sum of entered numbers is :  ", e) 
+if e==a:
+    print("amstrong")
+else :
+    print("not amstrong")
