@@ -1,0 +1,58 @@
+import turtle
+
+# Set up the screen
+screen = turtle.Screen()
+screen.bgcolor("white")
+
+# Create a turtle object
+pen = turtle.Turtle()
+pen.color("black")
+pen.speed(2)
+
+# Function to draw each letter
+def draw_letter(letter):
+    if letter == "a":
+        pen.penup()
+        pen.goto(-50, 0)
+        pen.pendown()
+        pen.circle(20)
+        pen.penup()
+        pen.goto(-50, 0)
+        pen.pendown()
+        pen.goto(-50, -40)
+    elif letter == "k":
+        pen.penup()
+        pen.goto(-20, 0)
+        pen.pendown()
+        pen.goto(-20, -40)
+        pen.penup()
+        pen.goto(-20, -20)
+        pen.pendown()
+        pen.goto(0, 0)
+        pen.penup()
+        pen.goto(-20, -20)
+        pen.pendown()
+        pen.goto(0, -40)
+    elif letter == "s":
+        pen.penup()
+        pen.goto(20, 0)
+        pen.pendown()
+        pen.circle(20, 180)
+        pen.circle(-20, 180)
+    elif letter == "h":
+        pen.penup()
+        pen.goto(50, 0)
+        pen.pendown()
+        pen.goto(50, -40)
+        pen.penup()
+        pen.goto(50, -20)
+        pen.pendown()
+        pen.goto(70, -20)
+
+# Write each letter
+for letter in "akash":
+    draw_letter(letter)
+
+# Hide the turtle and display the result
+pen.hideturtle()
+turtle.done()
