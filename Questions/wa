@@ -1,0 +1,13 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+#write a programme to find longest string in a tupple . using  user input
+#e=0
+x=tuple(input('ENTER THE VALUES  ').split(','))
+y=list(x)
+r=max(y,key=len)
+print(r)
+#while e<z:
+    
+ #   e=e+1
+#print(z)
+
