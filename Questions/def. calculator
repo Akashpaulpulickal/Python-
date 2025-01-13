@@ -1,0 +1,16 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+def calculator(num,no,mul):
+    if mul =="*":
+        a=num*no
+    elif mul =="/":
+        a=num/no
+    elif mul =="+":
+        a=num+no
+    elif mul =="-":    
+        a=num-no
+    print(a)    
+num1=int(input("enter the first number "))
+num2=int(input("enter the second number "))
+ope=input("enter the operator")
+calculator(num1,num2,ope)
